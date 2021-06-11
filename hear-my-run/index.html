@@ -131,7 +131,7 @@
             };
 
             const getActivityStream = (id) => {
-                return fetch(`/src/data/activities/${id}/stream-high.json`).then((response) => response.json());
+                return fetch(`./src/data/activities/${id}/stream-high.json`).then((response) => response.json());
             };
 
             const setupMap = () => {
@@ -139,7 +139,7 @@
 
                 // Add my face
                 const icon = L.icon({
-                    iconUrl: "/src/images/me.png",
+                    iconUrl: "./src/images/me.png",
                     iconSize: [48, 68],
                 });
 
